@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: rgb(255, 216, 20);
+  --color-primary-hover: rgb(247, 202, 0);
+  --color-secondary: #017cb6;
+  --color-header: rgb(19, 25, 33);
+  --color-amz: rgb(254, 189, 105);
+  --color-amz-hover: rgb(247, 202, 138);
+  --color-amz-orange: rgb(240, 136, 4);
+  --shadow-main: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary p-2 rounded-md font-bold w-52 cursor-pointer;
+  }
+}
